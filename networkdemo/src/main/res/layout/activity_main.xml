@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#A886D8"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        android:textSize="50dp"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/Login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:hint="请输入用户名"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/Login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:hint="请输入密码"/>
+    <Button
+        android:id="@+id/login_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="登陆"
+        android:layout_margin="20dp"
+        android:layout_gravity="center">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还没注册？点击注册"
+        android:layout_gravity="center"
+        android:id="@+id/login_register"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+
+</LinearLayout>
